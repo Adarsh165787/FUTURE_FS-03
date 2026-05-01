@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GoseriMart — Premium fresh groceries delivered to your door. Browse, add to cart, and order with ease.">
+  <title>GoseriMart — Fresh Groceries Delivered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+</head>
+<body>
+  <div id="app">
+    <header id="main-header"></header>
+    <div id="toast-container"></div>
+    <div id="auth-modal-container"></div>
+
+    <main id="page-content">
+      <div class="page-loader">
+        <div class="loader-spinner"></div>
+        <p>Loading fresh groceries...</p>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">🛒</span>
+          <span class="footer-name">GoseriMart</span>
+        </div>
+        <p class="footer-tagline">Fresh groceries, delivered with care.</p>
+        <div class="footer-links">
+          <a href="#/" data-link>Home</a>
+          <a href="#/products" data-link>Products</a>
+          <a href="#/cart" data-link>Cart</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 GoseriMart. Built with ❤️</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/components/toast.js"></script>
+  <script src="/js/components/authModal.js"></script>
+  <script src="/js/components/header.js"></script>
+  <script src="/js/components/productCard.js"></script>
+  <script src="/js/components/cartItem.js"></script>
+  <script src="/js/pages/home.js"></script>
+  <script src="/js/pages/products.js"></script>
+  <script src="/js/pages/cart.js"></script>
+  <script src="/js/pages/checkout.js"></script>
+  <script src="/js/pages/profile.js"></script>
+  <script src="/js/pages/orders.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
