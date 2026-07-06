@@ -1,6 +1,7 @@
 # 🛒 GoseriMart
 
 **Fresh Groceries Delivered to Your Door**
+# live demo - https://future-fs-03-five-psi.vercel.app/#/
 
 A full-stack grocery e-commerce application built with Node.js, Express, and MongoDB Atlas. Features user authentication, product browsing, cart management, and order placement with a premium dark-mode UI.
 
