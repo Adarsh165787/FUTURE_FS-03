@@ -34,12 +34,16 @@ app.get('*', (req, res) => {
 // Global error handler
 app.use(errorHandler);
 
-// Connect to MongoDB then start server
-connectDB().then(() => {
+// Connect to MongoDB
+connectDB();
+
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
   const HOST = process.env.HOST || '0.0.0.0';
   app.listen(PORT, HOST, () => {
     console.log(`\n  🛒  GoseriMart is running!`);
     console.log(`  ➜  Local:   http://localhost:${PORT}`);
     console.log(`  ➜  API:     http://localhost:${PORT}/api/products\n`);
   });
-});
+}
+
+module.exports = app;
